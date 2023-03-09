@@ -34,13 +34,13 @@ console.log('6. Showing supplyChanges...');
 for (x=0; x<supplyChanges.length; x++) {
   console.log(supplyChanges[x]);
   if(supplyChanges[x] > 0) {
-    console.log(`Added x parts`);
+    console.log(`Added ` + supplyChanges[x] + ` parts`);
   }
   else if (supplyChanges[x] === 0) {
     console.log(`No Change`);
   }
   else {
-    console.log(`Remove x parts`);
+    console.log(`Remove ` + supplyChanges[x] + ` parts`);
   }
 }
 
@@ -51,13 +51,13 @@ console.log('7. Showing supplyChanges with "for of" loop');
 for (number of supplyChanges) {
   console.log(number);
   if (number > 0) {
-    console.log(`Added x parts`);
+    console.log(`Added ` + number + ` parts`);
   }
   else if (number === 0) {
     console.log(`No Change`);
   }
   else {
-    console.log(`Remove x parts`);
+    console.log(`Remove ` + number + ` parts`);
   }
 }
 
