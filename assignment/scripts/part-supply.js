@@ -77,11 +77,28 @@ console.log(sum);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+
+// while (parts <= 572) {
+//   boxes = parts/7
+//   if (boxes % 7 < 7) {
+//     break; 
+//   }
+// }
+
+// console.log(`They used`, Math.ceil(boxes), `boxes to store all parts.`); 
+
+/* COMMENT: So it turns out I wasn't answering what the question was asking so
+   I rewrote my while loop below. */ 
+
 let parts = 572;
+let boxes = 0;
 while (parts <= 572) {
-  boxes = parts/7
-  if (boxes % 7 < 7) {
-    break; 
+  parts -= 7;
+  boxes++;
+  if (parts < 7) {
+    break;
   }
 }
-console.log(Math.ceil(boxes)); 
+
+console.log(`There are`, parts, `parts left over.`);
+console.log(boxes, 'boxes are filled completely');
