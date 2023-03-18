@@ -65,7 +65,7 @@ for (number of supplyChanges) {
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
 let sum = 0;
-for (number of supplyChanges) {
+for (let number of supplyChanges) {
   sum += number;
 }
 console.log(sum);
